@@ -4,4 +4,4 @@ SELECT CONCAT(
 FLOOR(HOUR(TIMEDIFF(now(), t1.feed_time)) / 24), ' days ',
 MOD(HOUR(TIMEDIFF(now(), t1.feed_time)), 24), ' hours ',
 MINUTE(TIMEDIFF(now(), t1.feed_time)), ' minutes') AS dateform 
-FROM tbl_feedback  WHERE t1.videoid=:videoid;
+FROM tbl_feedback 
